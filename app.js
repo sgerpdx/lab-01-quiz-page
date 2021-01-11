@@ -27,17 +27,42 @@ startButton.addEventListener('click', () => {
 
     let answersCorrect = 0;
 
-    const answerOne = prompt('Is an Astronomical Unit equal to the distance between the Earth and the Sun?');
-
-    if (answerOne.charAt(0).toUpperCase() === 'N') {
-        console.log('wronggggg');
+    const answerOne = prompt('Is an Astronomical Unit, or AU, equal to the distance between the Earth and the Sun?');
+    if (answerOne.charAt(0).toUpperCase() === 'Y') {
+        console.log('that is right');
+        answersCorrect++;
+        console.log(answersCorrect);
 
     } else {
-        console.log('yeaha');
+        console.log('sorry, that is wrong');
 
-        answersCorrect++;
         console.log(answersCorrect);
     }
 
+
+    const answerTwo = prompt('Are the Sun and the Earth always the exact same distance apart?');
+    if (answerTwo.charAt(0).toUpperCase() === 'N') {
+        console.log('that is right');
+        answersCorrect++;
+        console.log(answersCorrect);
+
+    } else {
+        console.log('sorry, that is wrong');
+
+        console.log(answersCorrect);
+    }
+
+
+    const answerThree = prompt('Is the AU used to measure the heliocentric distances of asteroids?');
+    if (answerThree.charAt(0).toUpperCase() === 'Y') {
+        console.log('that is right');
+        answersCorrect++;
+        console.log(answersCorrect);
+
+    } else {
+        console.log('sorry, that is wrong');
+
+        console.log(answersCorrect);
+    }
 
 });
