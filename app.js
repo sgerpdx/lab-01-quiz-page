@@ -20,9 +20,14 @@ startButton.addEventListener('click', () => {
     } else {
         console.log('negative');
         return;
-
     }
 
+    const firstName = prompt('Please enter your first name');
+
+    const lastName = prompt('Please enter your last name');
+
+    console.log(firstName);
+    console.log(lastName);
 
 
 
