@@ -25,6 +25,7 @@ startButton.addEventListener('click', () => {
     const firstName = prompt('Please enter your first name');
     const lastName = prompt('Please enter your last name');
 
+
     let answersCorrect = 0;
 
     const answerOne = prompt('Is an Astronomical Unit, or AU, equal to the distance between the Earth and the Sun?');
@@ -35,7 +36,6 @@ startButton.addEventListener('click', () => {
 
     } else {
         console.log('sorry, that is wrong');
-
         console.log(answersCorrect);
     }
 
@@ -48,7 +48,6 @@ startButton.addEventListener('click', () => {
 
     } else {
         console.log('sorry, that is wrong');
-
         console.log(answersCorrect);
     }
 
@@ -61,8 +60,11 @@ startButton.addEventListener('click', () => {
 
     } else {
         console.log('sorry, that is wrong');
-
         console.log(answersCorrect);
     }
+
+
+    const endMessage = `Welcome back to Earth, ${firstName} ${lastName}! You answered ${answersCorrect} questions right out of 3.`
+    showResults.textContent = endMessage;
 
 });
