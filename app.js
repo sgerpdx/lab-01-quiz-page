@@ -11,7 +11,19 @@ const showResults = document.getElementById('results-box');
 
 startButton.addEventListener('click', () => {
 
-    alert('Strap-in, the Quiz is about to launch!');
+    alert('Fasten your safety harness, the Quiz is about to launch!');
+
+    const flightCheck = confirm('Are you sure that you will to take the quiz?');
+
+    if (flightCheck === true) {
+        console.log('affirmative');
+    } else {
+        console.log('negative');
+        return;
+
+    }
+
+
 
 
 
