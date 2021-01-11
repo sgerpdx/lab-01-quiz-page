@@ -23,13 +23,21 @@ startButton.addEventListener('click', () => {
     }
 
     const firstName = prompt('Please enter your first name');
-
     const lastName = prompt('Please enter your last name');
 
-    console.log(firstName);
-    console.log(lastName);
+    let answersCorrect = 0;
 
+    const answerOne = prompt('Is an Astronomical Unit equal to the distance between the Earth and the Sun?');
 
+    if (answerOne.charAt(0).toUpperCase() === 'N') {
+        console.log('wronggggg');
+
+    } else {
+        console.log('yeaha');
+
+        answersCorrect++;
+        console.log(answersCorrect);
+    }
 
 
 });
