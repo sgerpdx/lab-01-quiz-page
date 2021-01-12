@@ -1,7 +1,6 @@
 // import functions and grab DOM elements
 
 
-
 const startButton = document.getElementById('start-quiz');
 const showResults = document.getElementById('results-box');
 

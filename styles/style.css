@@ -59,6 +59,10 @@ p {
     margin-bottom: 20px;
 }
 
+.citation {
+    font-style: italic;
+}
+
 .button {
     padding: 15px 0px 15px 0px;
     display: flex;

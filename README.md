@@ -16,7 +16,7 @@ Process:
 
 2. In js:
     - grab DOM elements and log to console
-    - create variable using let to store correct question answers
+    - create variable using let to store correct question answers (this happens inside event listener, later)
     - create event listener for button click
         - inside the event listener, create:
             - an alert function to notify the user of the impending quiz
