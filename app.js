@@ -13,7 +13,7 @@ startButton.addEventListener('click', () => {
 
 
 
-    const flightCheck = confirm('Are you sure that you will to take the quiz?');
+    const flightCheck = confirm('Are you still sure that you want to take the Quiz?');
 
     if (flightCheck !== true) {
 
