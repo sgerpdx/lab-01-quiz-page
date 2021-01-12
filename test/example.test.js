@@ -1,18 +1,34 @@
-// IMPORT MODULES under test here:
-// import { example } from '../example.js';
+
+
+import { checkForYes } from '../utils.js';
+
+
 
 const test = QUnit.test;
 
-test('time to test a function', (expect) => {
-    //Arrange
-    // Set up your arguments and expectations
-    const expected = true;
-    
-    //Act 
-    // Call the function you're testing and set the result to a const
-    const actual = false;
+test('it should take a string and determine whether the first character is the letter y', (assert) => {
 
-    //Expect
-    // Make assertions about what is expected versus the actual result
-    expect.equal(actual, expected);
+    const answer = 'yellow';
+    const expected = answer.charAt(0).toUpperCase() === 'Y';
+    const actual = checkForYes(answer);
+
+    assert.equal(actual, expected);
 });
+
+
+
+// export function getLength(word) {
+//     // this function should take in a word and return the number of letters in that word
+//     return word.length;
+// }
+
+
+// test('it should take in a string and return the length of the string', function (assert) {
+
+//     const myWord = 'texas';
+//     const expected = 5;
+
+//     const actual = getLength(myWord);
+
+//     assert.equal(actual, expected);
+// });
