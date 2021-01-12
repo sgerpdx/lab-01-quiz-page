@@ -6,7 +6,7 @@ import { checkForYes } from '../utils.js';
 
 const test = QUnit.test;
 
-test('it should take a string and determine whether the first character is the letter y', (assert) => {
+test('if the first letter of the input string is y, the fuction should return true', (assert) => {
 
     const answer = 'yellow';
     const expected = true;
@@ -22,7 +22,7 @@ test('it should take a string and determine whether the first character is the l
 });
 
 
-test('it should take a string and determine whether the first character is the letter y', (assert) => {
+test('if the first letter of the input string is not y, the fuction should return false', (assert) => {
 
     const answer = 'october';
     const expected = false;
