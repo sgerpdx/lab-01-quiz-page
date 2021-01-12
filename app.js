@@ -57,8 +57,9 @@ startButton.addEventListener('click', () => {
         answersCorrect++;
     }
 
+    const percentage = Math.ceil((answersCorrect / 3) * 100);
 
-    const endMessage = `Welcome back to Earth, ${firstName} ${lastName}! You answered ${answersCorrect} questions right out of 3.`;
+    const endMessage = `Welcome back to Earth, ${firstName} ${lastName}! You answered ${answersCorrect} questions right out of 3, or ${percentage}% correct.`;
     showResults.textContent = endMessage;
 
 });
