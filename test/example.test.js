@@ -13,6 +13,30 @@ test('it should take a string and determine whether the first character is the l
     const actual = checkForYes(answer);
 
     assert.equal(actual, expected);
+
+    if (answer.charAt(0).toUpperCase() === 'Y') {
+        console.log('correct');
+    } else {
+        console.log('incorrect');
+    }
+});
+
+
+test('it should take a string and determine whether the first character is the letter y', (assert) => {
+
+    const answer = 'october';
+    const expected = answer.charAt(0).toUpperCase() === 'Y';
+    const actual = checkForYes(answer);
+
+    assert.equal(actual, expected);
+
+
+    if (answer.charAt(0).toUpperCase() === 'Y') {
+        console.log('correct');
+    } else {
+        console.log('incorrect');
+    }
+
 });
 
 
